@@ -5,16 +5,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.not-found h1 {
+    background-color: #121212;
+    color: #e0e0e0; 
+  }
+  
+  .not-found h1 {
     font-size: 120px;
-}
-
-.not-found a {
+    color: #ff5722; 
+  }
+  
+  .not-found a {
     text-decoration: none;
-    background-color: #116feb;
-    color: #fff;
+    background-color: #ff5722; 
+    color: #fff; 
     padding: 10px;
     margin-top: 14px;
-}
+    border-radius: 4px;
+  }
+  
