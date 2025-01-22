@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 import './home.css';
+import '../Lancamentos/lancamentos.css'
 
 
 function Home(){
@@ -10,7 +11,7 @@ function Home(){
 
     useEffect(()=>{
         async function loadFilmes() {
-            const response = await api.get("movie/now_playing", {
+            const response = await api.get("movie/upcoming", {
                 params: {
                     api_key: process.env.REACT_APP_API_KEY,
                     language: "pt-BR",
@@ -33,21 +34,23 @@ function Home(){
         )
     }
 
-    return(
-        <div className="container">
-            <div className="lista-filmes">
-                {filmes.map((filme) => {
-                    return(
-                        <article key={filme.id}>
-                            <strong>{filme.title}</strong>
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}></img>
-                            <Link to={`/filme/${filme.id}`}>Acessar</Link>
-                        </article>
-                    )
-                })}
-            </div>
-        </div>
-    )
+  return (
+    <div className="filmes-home">
+      <h1>Todos os Filmes</h1>
+      <div className="filmes-home-lista">
+        {filmes.map((filme) => (
+          <div key={filme.id} className="card-filme">
+            <img
+              src={`https://image.tmdb.org/t/p/w500/${filme.poster_path}`}
+              alt={filme.title}
+            />
+            <h2>{filme.title}</h2>
+            <Link to={`/filme/${filme.id}`}>Detalhes</Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Home;

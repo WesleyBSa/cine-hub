@@ -1,54 +1,19 @@
-.lista-filmes {
+.filmes-home {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  padding: 5px 14px;
+  color: #ffeb3b;
+  border-radius: 4px;
+  padding: 40px;
+  text-align: center;
+}
+
+.filmes-home-lista {
     max-width: 1000px; 
-    margin: 14px auto;
+    margin: 36px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
-  }
-  
-  .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 14px;
-  }
-  
-  .lista-filmes articles {
-    display: flex;
-    flex-direction: column;
-    background-color: #1c1c1c;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    overflow: hidden; 
-  }
-  
-  .lista-filmes strong {
-    margin: 7px 0;
-    text-align: center;
-    font-size: 18px;
-    color: #ffeb3b;
-  }
-  
-  .lista-filmes img {
-    background-color:rgb(41, 40, 40);
-    width: 100%; 
-    max-height: 400px; 
-    object-fit: contain; 
-  }
-  
-  .lista-filmes a {
-    display: block;
-    text-align: center;
-    font-size: 16px; 
-    padding: 10px 0;
-    background-color: rgb(243, 134, 32);
-    color: #fff;
-    text-decoration: none;
-    width: 100%; 
-    margin-top: auto; 
-  }
-  
-  .lista-filmes a:hover {
-    background-color: rgb(228, 123, 24);
-  }
-  
+}
+

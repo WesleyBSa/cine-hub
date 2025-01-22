@@ -1,0 +1,59 @@
+.lancamentos {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  padding: 5px 14px;
+  color: #ffeb3b;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.lista-lancamentos {
+    max-width: 1000px; 
+    margin: 36px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.card-filme {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card-filme:hover {
+  transform: scale(1.01);
+}
+
+.card-filme img {
+    background-color:rgb(26, 25, 25);
+    width: 100%; 
+    max-height: 400px; 
+    object-fit: contain; 
+    
+}
+
+.card-filme h2 {
+  font-size: 18px;
+  color:rgb(235, 133, 17);
+  padding: 10px;
+}
+
+.card-filme a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(235, 133, 17);
+  padding: 10px 0;
+  margin: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.card-filme a:hover {
+  background-color: rgb(209, 118, 13);
+}
