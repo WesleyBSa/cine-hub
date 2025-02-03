@@ -77,14 +77,6 @@ A aba **Populares** consome a API `/movie/popular`, trazendo os filmes mais assi
 
 ---
 
-## 🎬 Demonstração
-
-Aqui está um vídeo demonstrando o funcionamento completo do CineHub:
-
-![Demonstração](./public/assets/bandicam%202025-02-03%2011-47-17-559.mp4)
-
----
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
